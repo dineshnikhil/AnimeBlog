@@ -1,0 +1,25 @@
+<%- include('header.ejs'); -%>
+<%- include('nav.ejs'); -%>
+<%- include('searchbox.ejs'); -%>
+
+<div class="container-fluid card-div">
+    
+    <% animes.forEach(function(anime){ %>
+        <div class="custom-card">
+            <a href="/article/<%= anime.title %>"><img src=<%= anime.poster %> alt="poster"><i class="fas fa-play"></i></a>
+            <h2><%= anime.title %></h2>
+            <i>Seasons <%= anime.episodes %></i>
+            <i><%= anime.type %></i>
+            <p><%= anime.info.substring(0,150) %></p>
+            <p>score: <%= anime.rating %></p>
+            <p>status: <%= anime.status %></p>
+        </div>
+    <% }) %>
+
+    
+</div>
+
+
+
+
+<%- include('footer.ejs'); -%>

@@ -1,0 +1,46 @@
+<%- include('header'); -%>
+<%- include('nav'); -%>
+
+<div class="container-fluid post-div">
+    <h1>Booking Posting Section</h1>
+    <br>
+    <form action="/post" method="post">
+        <div class="mb-3">
+            <input type="text" name="title" class="form-control" placeholder="Anime Title">
+        </div>
+        <div class="mb-3">
+            <input type="text" name="info" class="form-control" placeholder="Anime innformation">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" name="rating" class="form-control" placeholder="Anime score">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" name="type" class="form-control" placeholder="Anime Type">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" name="episodes" class="form-control" placeholder="Anime episodes">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" name="status" class="form-control" placeholder="Anime status">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" name="poster" class="form-control" placeholder="Anime poster url">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" name="watchurl" class="form-control" placeholder="Anime watch url">
+        </div>
+        
+        <div class="col-12">
+            <button type="submit" class="btn">Add Anime</button>
+        </div>
+    </form>
+    
+</div>
+
+<%- include('footer');  -%>

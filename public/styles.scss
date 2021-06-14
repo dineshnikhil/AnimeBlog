@@ -1,0 +1,423 @@
+$font : 'Roboto Slab', serif;
+$bg : #212529;
+$second_bg: #343a40;
+$heading: #f8f9fa;
+$secound_font: #dee2e6;
+$third_font: #adb5bd;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $bg;
+    font: $font;
+}
+
+h1 {
+    color: $heading;
+}
+h2 {
+    color: $heading;
+}
+ p{
+    color: $third_font;
+ }
+
+ input[type="text"]{
+    color: $heading;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid $third_font;
+}
+
+input[type="text"]:focus{
+    color: $heading;
+    background: transparent;
+    border-bottom: 3px solid $heading;
+    box-shadow: none;
+}
+
+
+input:focus::placeholder{
+    color: transparent!important;
+    transition: transform 2s ease-in-out;
+}
+
+.btn {
+    background-color: transparent;
+    color: $heading;
+    border: 1.5px solid $heading;
+    border-radius: 0;
+    &:hover {
+        background-color: $heading !important;
+        color: $bg !important;
+    }
+}
+
+
+::placeholder {
+    font-size: 1.5rem;
+}
+
+input[type="search"]{
+    background-color: transparent !important;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+input[type="search"]:focus{
+    box-shadow: none;
+}
+
+// ==================== nav section ===================
+
+nav {
+    background-color: $second_bg !important;
+
+    .navbar-brand {
+        color: #f8f9fa;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .nav-div {
+        padding: 0.7% 2% !important;
+    }
+
+    .nav-link {
+        color: $secound_font !important;
+        font-size: 1.2rem;
+        margin-left: 20px;
+        transition: 0.2s ease-in-out;
+        border-bottom: 1px solid $second_bg;
+
+        &:hover {
+            color: $third_font !important;
+            // letter-spacing: 2px;
+            border-bottom-width: 20px;
+            border-bottom: 1px solid $third_font;
+        }
+    }
+
+    .profile-link {
+        font-size: 1.6rem;
+        color: $heading !important;
+
+        &:hover {
+            color: $third_font !important;
+            border-bottom: 1px solid $second_bg;
+
+            cursor: pointer;
+        }
+    }
+}
+
+
+// ================ search section ======================= 
+
+.search-div {
+    padding: 3% 6% !important;
+    position: relative;
+
+    .search-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .d-flex {
+        position: absolute;
+        padding: 1%;
+        background-color: $heading;
+        bottom: 13px;
+        left: 20%;
+
+        width: 55%;
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .fa-search {
+            font-size: 1.5rem;
+            font-weight: 200;
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+    }
+}
+
+// ===================== inro div section ====================
+
+.intro-div {
+    padding: 3% 6% 1% 6% !important;
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+// ========================== custome cards sections ===========
+
+.card-div {
+    padding: 3% 6.6% !important;
+    
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    i {
+        color: $secound_font !important;
+        text-decoration: none;
+        font-style: normal;
+        background-color: $second_bg;
+        padding: 1%;
+    }
+    
+    p{
+        margin: 1.7% 0;
+    }
+
+    .custom-card {
+        position: relative;
+        background-color: $bg;
+        padding: 2%;
+        border: 1px solid $third_font;
+        width: 32rem;
+        height: 360px;
+        float: left;
+        margin: 2%;
+        transition: 0.3s ease-in-out;
+
+        #watchlistWatchNow {
+            text-decoration: none;
+            border: 1px solid $heading;
+            padding: 1.5% 2.6%;
+            font-size: 1.2rem;
+            color: $heading;
+            transition: 0.2s ease-in-out;
+
+            margin-top: 20px;
+
+            &:hover {
+                background-color: $heading !important;
+                color: $bg;
+            }
+        }
+
+        #watchlistSub {
+            position: absolute;
+            left: 12vw;
+            bottom: 11vh;
+            background-color: $bg;
+            text-decoration: none;
+            border: 1px solid $heading;
+            padding: 0.8% 2%;
+            font-size: 1.2rem;
+            color: $heading;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $heading !important;
+                color: $bg;
+                .fa-minus {
+                    background-color: $heading !important;
+                    color: $bg !important;
+                }
+            }
+
+            .fa-minus {
+                background-color: $bg;
+                margin: 0;
+                padding: 0;
+
+                // &:hover {
+                //     background-color: $heading !important;
+                //     color: $bg;
+                // }
+            }
+        }
+        
+
+        a {
+            position: relative;
+
+            .fa-play {
+                color: $heading !important;
+                position: absolute;
+                top: 140px;
+                left: 350px;
+                background-color: transparent;
+                font-size: 3rem;
+                opacity: 0;
+
+                
+            }
+        
+            img {
+                float: right;
+                width: 45%;
+                height: auto;
+                margin-left: 10px;
+                transition: 0.3s, ease-in-out;
+                
+            }
+
+            &:hover {
+                img {
+                    opacity: 0.5;
+                }
+                
+                
+
+                .fa-play {
+                    opacity: 1;
+                    color: $heading !important;
+                }
+            }
+        }
+
+        &:hover {
+            transform:scale(1.1);
+        }
+        
+    }
+
+    
+}
+
+
+// ======================= post div ========================
+
+.post-div {
+    padding: 8% 17% !important;
+}
+
+// =========================== article section =================
+
+.article-div {
+    padding: 4% 9% !important;
+    height: 80vh;
+
+    .info-div {
+        float: right;
+        width: 70%;
+        position: relative;
+
+        p {
+            margin: 0.7% 0;
+        }
+
+        span {
+            color: $heading;
+        }
+
+        #watchNow {
+            position: absolute;
+            right: 8vw;
+            bottom: 4.5vh;
+            text-decoration: none;
+            border: 1px solid $heading;
+            padding: 1% 2%;
+            font-size: 1.2rem;
+            color: $heading;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $heading !important;
+                color: $bg;
+            }
+        }
+
+        #watchLater {
+            position: absolute;
+            background-color: $bg;
+            right: 3vw;
+            bottom: 4.5vh;
+            text-decoration: none;
+            border: 1px solid $heading;
+            padding: 1% 2%;
+            font-size: 1.2rem;
+            color: $heading;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $heading !important;
+                color: $bg;
+            }
+        }
+    }
+
+    img {
+        width: 18rem;
+        height: auto;
+        float: left;
+    }
+}
+
+
+
+
+// ===================== suggestions-div section ============
+
+.suggestions-div {
+    padding: 2% 9% !important;
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    a {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .fa-play {
+            position: absolute;
+            right: 4vw;
+            top: 0.2vh;
+            font-size: 4rem;
+            color: $heading;
+            opacity: 0;
+        }
+
+        &:hover {
+            img {
+                opacity: 0.5;
+            }
+            .fa-play {
+                opacity: 1;
+            }
+        }
+    }
+
+    .sugg-card {
+        width: 11rem;
+        height: 320px;
+        float: left;
+        margin: 2%;
+        transition: 0.3s ease-in-out;
+
+        p {
+            margin-top: 4%;
+            color: $heading;
+        }
+
+        &:hover {
+            transform:scale(1.2);
+        }
+        
+    }
+
+}

@@ -1,0 +1,427 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #212529;
+  font: "Roboto Slab", serif;
+}
+
+h1 {
+  color: #f8f9fa;
+}
+
+h2 {
+  color: #f8f9fa;
+}
+
+p {
+  color: #adb5bd;
+}
+
+input[type="text"] {
+  color: #f8f9fa;
+  margin-bottom: 2%;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #adb5bd;
+}
+
+input[type="text"]:focus {
+  color: #f8f9fa;
+  background: transparent;
+  border-bottom: 3px solid #f8f9fa;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+input:focus::-ms-input-placeholder {
+  color: transparent !important;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+input:focus::placeholder {
+  color: transparent !important;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+.btn {
+  background-color: transparent;
+  color: #f8f9fa;
+  border: 1.5px solid #f8f9fa;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.5rem;
+}
+
+:-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+::-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+}
+
+input[type="search"] {
+  background-color: transparent !important;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+input[type="search"]:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav {
+  background-color: #343a40 !important;
+}
+
+nav .navbar-brand {
+  color: #f8f9fa;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav .nav-div {
+  padding: 0.7% 2% !important;
+}
+
+nav .nav-link {
+  color: #dee2e6 !important;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-bottom: 1px solid #343a40;
+}
+
+nav .nav-link:hover {
+  color: #adb5bd !important;
+  border-bottom-width: 20px;
+  border-bottom: 1px solid #adb5bd;
+}
+
+nav .profile-link {
+  font-size: 1.6rem;
+  color: #f8f9fa !important;
+}
+
+nav .profile-link:hover {
+  color: #adb5bd !important;
+  border-bottom: 1px solid #343a40;
+  cursor: pointer;
+}
+
+.search-div {
+  padding: 3% 6% !important;
+  position: relative;
+}
+
+.search-div .search-img {
+  width: 100%;
+  height: auto;
+}
+
+.search-div .d-flex {
+  position: absolute;
+  padding: 1%;
+  background-color: #f8f9fa;
+  bottom: 13px;
+  left: 20%;
+  width: 55%;
+}
+
+.search-div .d-flex button {
+  background: none;
+  border: none;
+}
+
+.search-div .d-flex .fa-search {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.search-div .d-flex .fa-search:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.intro-div {
+  padding: 3% 6% 1% 6% !important;
+}
+
+.intro-div h1 {
+  font-size: 1.7rem;
+}
+
+.card-div {
+  padding: 3% 6.6% !important;
+}
+
+.card-div h2 {
+  font-size: 1.3rem;
+}
+
+.card-div i {
+  color: #dee2e6 !important;
+  text-decoration: none;
+  font-style: normal;
+  background-color: #343a40;
+  padding: 1%;
+}
+
+.card-div p {
+  margin: 1.7% 0;
+}
+
+.card-div .custom-card {
+  position: relative;
+  background-color: #212529;
+  padding: 2%;
+  border: 1px solid #adb5bd;
+  width: 32rem;
+  height: 360px;
+  float: left;
+  margin: 2%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card-div .custom-card #watchlistWatchNow {
+  text-decoration: none;
+  border: 1px solid #f8f9fa;
+  padding: 1.5% 2.6%;
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+.card-div .custom-card #watchlistWatchNow:hover {
+  background-color: #f8f9fa !important;
+  color: #212529;
+}
+
+.card-div .custom-card #watchlistSub {
+  position: absolute;
+  left: 12vw;
+  bottom: 11vh;
+  background-color: #212529;
+  text-decoration: none;
+  border: 1px solid #f8f9fa;
+  padding: 0.8% 2%;
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.card-div .custom-card #watchlistSub:hover {
+  background-color: #f8f9fa !important;
+  color: #212529;
+}
+
+.card-div .custom-card #watchlistSub:hover .fa-minus {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+.card-div .custom-card #watchlistSub .fa-minus {
+  background-color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+.card-div .custom-card a {
+  position: relative;
+}
+
+.card-div .custom-card a .fa-play {
+  color: #f8f9fa !important;
+  position: absolute;
+  top: 140px;
+  left: 350px;
+  background-color: transparent;
+  font-size: 3rem;
+  opacity: 0;
+}
+
+.card-div .custom-card a img {
+  float: right;
+  width: 45%;
+  height: auto;
+  margin-left: 10px;
+  -webkit-transition: 0.3s, ease-in-out;
+  transition: 0.3s, ease-in-out;
+}
+
+.card-div .custom-card a:hover img {
+  opacity: 0.5;
+}
+
+.card-div .custom-card a:hover .fa-play {
+  opacity: 1;
+  color: #f8f9fa !important;
+}
+
+.card-div .custom-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.post-div {
+  padding: 8% 17% !important;
+}
+
+.article-div {
+  padding: 4% 9% !important;
+  height: 80vh;
+}
+
+.article-div .info-div {
+  float: right;
+  width: 70%;
+  position: relative;
+}
+
+.article-div .info-div p {
+  margin: 0.7% 0;
+}
+
+.article-div .info-div span {
+  color: #f8f9fa;
+}
+
+.article-div .info-div #watchNow {
+  position: absolute;
+  right: 8vw;
+  bottom: 4.5vh;
+  text-decoration: none;
+  border: 1px solid #f8f9fa;
+  padding: 1% 2%;
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.article-div .info-div #watchNow:hover {
+  background-color: #f8f9fa !important;
+  color: #212529;
+}
+
+.article-div .info-div #watchLater {
+  position: absolute;
+  background-color: #212529;
+  right: 3vw;
+  bottom: 4.5vh;
+  text-decoration: none;
+  border: 1px solid #f8f9fa;
+  padding: 1% 2%;
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.article-div .info-div #watchLater:hover {
+  background-color: #f8f9fa !important;
+  color: #212529;
+}
+
+.article-div img {
+  width: 18rem;
+  height: auto;
+  float: left;
+}
+
+.suggestions-div {
+  padding: 2% 9% !important;
+}
+
+.suggestions-div h1 {
+  font-size: 1.7rem;
+}
+
+.suggestions-div a {
+  position: relative;
+}
+
+.suggestions-div a img {
+  width: 100%;
+  height: auto;
+}
+
+.suggestions-div a .fa-play {
+  position: absolute;
+  right: 4vw;
+  top: 0.2vh;
+  font-size: 4rem;
+  color: #f8f9fa;
+  opacity: 0;
+}
+
+.suggestions-div a:hover img {
+  opacity: 0.5;
+}
+
+.suggestions-div a:hover .fa-play {
+  opacity: 1;
+}
+
+.suggestions-div .sugg-card {
+  width: 11rem;
+  height: 320px;
+  float: left;
+  margin: 2%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.suggestions-div .sugg-card p {
+  margin-top: 4%;
+  color: #f8f9fa;
+}
+
+.suggestions-div .sugg-card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=styles.css.map */

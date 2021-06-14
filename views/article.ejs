@@ -1,0 +1,51 @@
+<%- include('header'); -%>
+<%- include('nav'); -%>
+
+<div class="container-fluid article-div">
+
+    <img src=<%= poster %> alt="poster">
+
+    <div class="info-div">
+        <h1><%= title %></h1>
+        <p><%= info %></p>
+        <p>Type :  <span><%= type %></span></p>
+        <p>Score :  <span><%= rating %></span> / 10</p>
+        <p>Seasons :  <span><%= episodes %></span></p>
+        <p>Status :  <span><%= status %></span></p>
+        <a id="watchNow" href=<%= watchurl %> target="_blank">Watch Now</a>
+        <form action="/article" method="POST">
+            <button id="watchLater" name="add" value="<%= title %>" type="submit"><i class="fas fa-plus"></i></button>
+        </form>
+        
+    </div>   
+
+</div>
+
+<% const arr = []; %>
+<% const random = []; %>
+
+
+<% for (var i = 0; i < 10; i++) { %>
+<%     arr.push(Math.floor(Math.random() * 32)); %>
+<% } %>
+
+<% random.push(arr[0]); %>
+
+<% arr.forEach(function(num) { %>
+<%     if (random.indexOf(num) == -1) { %>
+<%         random.push(num); %>
+<%     } %>
+<% }); %>
+
+<div class="container-fluid suggestions-div">
+    <h1>Suggestions</h1>
+
+    <% for(var i = 0; i < 5; i++) { %>
+        <div class="sugg-card">
+            <a href="/article/<%= animes[random[i]].title %>"><img src=<%= animes[random[i]].poster %> alt="poster"><i class="fas fa-play"></i></a>
+            
+            <p><%= animes[random[i]].title %></p>
+        </div>
+    <% } %>
+</div>
+<%- include('footer'); -%>
